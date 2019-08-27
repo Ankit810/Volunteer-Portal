@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/techtatava.jpeg">
+    <link rel="stylesheet" type="text/css" href="/css/volpor1.css">
+    <title>TT'19 Volunteer Portal</title>
+</head>
+<body>
+<div class="outer">
+<div class="body1">
+  <div class="container">
+    <div class="logo">
+<img src="/img/techtatava.jpeg" width=300px; style="border-radius:50%; text-align: center;" alt="TT19 logo"; align="center">
+<h2>TECH TATVA'19<br> VOLUNTEER PORTAL</h2>
+    </div>
+
+    <div class="info">
+      <p>Greetings First Years!<br><br>Welcome to the magnificent annual technical fest of MIT Manipal. To make this fest a grand success, we expect some volunteering help from your side with utmost sincerety and dedication.<br><br> The following list contains some brief information about the various category heads. You can choose three category heads and rank them according to your preference in the registration form.<br><br> All the Best!<br><br><p>
+    </div>
+    <br>
+    <div class="con">
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <h2>Type: {{type}}</h2>
+          <p>{{description}} </p>
+        </div>
+      </div>
+      <div class="face face2">
+        <!-- <h2>Category {{id}}</h2> -->
+        <h2>{{name}}</h2>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <h2>Type: {{type1}}</h2>
+          <p>{{description1}}<!-- Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book. --> </p>
+        </div>
+      </div>
+      <div class="face face2">
+        <!-- <h2>Category {{id1}}</h2> -->
+        <h2>{{name1}}</h2>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <h2>Type: {{type2}}</h2>
+          <p>{{description2}} </p>
+        </div>
+      </div>
+      <div class="face face2">
+        <h2>{{name2}}</h2>
+      </div>
+    </div>
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <h2>Type: {{type3}}</h2>
+        <p>{{description3}}</p>
+      </div>
+    </div>
+    <div class="face face2">
+      <h2>{{name3}}</h2>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <h2>Type: {{type4}}</h2>
+        <p>{{description4}} </p>
+      </div>
+    </div>
+    <div class="face face2">
+      <h2>{{name4}}</h2>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <h2>Type: {{type5}}</h2>
+        <p>{{description5}}</p>
+      </div>
+    </div>
+    <div class="face face2">
+      <h2>{{name5}}</h2>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <h2>Type: {{type6}}</h2>
+        <p>{{description6}}</p>
+      </div>
+    </div>
+    <div class="face face2">
+      <h2>{{name6}}</h2>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <h2>Type: {{type7}}</h2>
+        <p>{{description7}}</p>
+      </div>
+    </div>
+    <div class="face face2">
+      <h2>{{name7}}</h2>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <h2>Type: {{type8}}</h2>
+        <p>{{description8}}</p>
+      </div>
+    </div>
+    <div class="face face2">
+      <h2>{{name8}}</h2>
+    </div>
+  </div>
+ <!-- <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+      </div>
+    </div>
+    <div class="face face2">
+      <h2>Category 10</h2>
+    </div>
+  </div> -->
+ </div>
+</div>
+</div>
+<br>
+
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="reg">Register</button>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="reg1">Register</button>
+
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate" action="auth" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="/img/techtatava.jpeg" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container1">
+        <label for="uname" class="entry"><b>Fullname</b></label>
+        <input class="un" type="text" placeholder="Enter Fullname" name="uname" required>
+        <br>
+
+
+        <label for="uname" class="entry"><b>Registration No</b></label>
+        <input type="number"  class="rn" placeholder="Enter Registration No." name="regno" required>
+        <br>
+        <label for="uname" class="entry" ><b>Mobile &nbsp;Number</b></label>
+
+        <input type="number" class="mobile" placeholder="Enter Mobile No." name="mobile" required>
+        <br>
+        <label for="uname" class="entry" ><b>Email id&nbsp;&nbsp;</b></label>
+        <input class="un" type="text" placeholder="Enter Email" name="email" required>
+        <br>
+        <h1 class="entry2">Select Preferences</h1>
+
+        <select name="Preference1">
+              <option value="" disabled selected>Preference1</option>
+              <optgroup label="Select Preference">
+              <option value="{{name}}">{{name}}</option>
+              <option value="{{name1}}">{{name1}}</option>
+              <option value="{{name2}}">{{name2}}</option>
+              <option value="{{name3}}">{{name3}}</option>
+              <option value="{{name4}}">{{name4}}</option>
+              <option value="{{name5}}">{{name5}}</option>
+              <option value="{{name6}}">{{name6}}</option>
+              <option value="{{name7}}">{{name7}}</option>
+              <option value="{{name8}}">{{name8}}</option>
+        </select>
+            <select name="Preference2">
+                  <option value="" disabled selected>Preference2</option>
+                  <optgroup label="Select Prference">
+              <option value="{{name}}">{{name}}</option>
+              <option value="{{name1}}">{{name1}}</option>
+              <option value="{{name2}}">{{name2}}</option>
+              <option value="{{name3}}">{{name3}}</option>
+              <option value="{{name4}}">{{name4}}</option>
+              <option value="{{name5}}">{{name5}}</option>
+              <option value="{{name6}}">{{name6}}</option>
+              <option value="{{name7}}">{{name7}}</option>
+              <option value="{{name8}}">{{name8}}</option>
+                </select>
+            <select name="Preference3">
+                      <option value="" disabled selected>Preference3</option>
+                      <optgroup label="Select Prference">
+              <option value="{{name}}">{{name}}</option>
+              <option value="{{name1}}">{{name1}}</option>
+              <option value="{{name2}}">{{name2}}</option>
+              <option value="{{name3}}">{{name3}}</option>
+              <option value="{{name4}}">{{name4}}</option>
+              <option value="{{name5}}">{{name5}}</option>
+              <option value="{{name6}}">{{name6}}</option>
+              <option value="{{name7}}">{{name7}}</option>
+              <option value="{{name8}}">{{name8}}</option>
+                    </select>
+                    <br>
+        <button class="submit" type="submit">Submit</button>
+        <label>
+
+      </div>
+    </form>
+  </div>
+</div>
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+</body>
+</html>
